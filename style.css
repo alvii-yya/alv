@@ -53,13 +53,13 @@ section {
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
-   section {
-      display: none;
-    }
+section {
+  display: none;
+}
 
-    section:target {
-      display: block;
-    }
-    body:not(:has(:target)) #home {
-      display: block;
-    }
+section:target {
+   display: block;
+}
+body:not(:has(:target)) #home {
+   display: block;
+}
