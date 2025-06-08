@@ -1,0 +1,65 @@
+* {
+  font-family: 'Comic Sans MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: none;
+  text-align: center;
+}
+
+header {
+  background-color: Lavender;
+  color: white;
+  padding: 30px 0;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #aaa;
+  margin-top: 10px;
+}
+
+nav {
+  margin: 50px;
+}
+
+button {
+  padding: 18px 20px;
+  margin: 5px;
+  border: none;
+  background-color: Plum;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Rockwell', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+section {
+  margin: 20px auto;
+  padding: 30px;
+  width: 60%;
+  max-width: 550px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+   section {
+      display: none;
+    }
+
+    section:target {
+      display: block;
+    }
+    body:not(:has(:target)) #home {
+      display: block;
+    }
